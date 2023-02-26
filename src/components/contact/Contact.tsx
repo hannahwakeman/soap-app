@@ -4,6 +4,8 @@ import TextCard from '../shared/TextCard';
 import './Contact.scss';
 
 export default function Contact(props: { isMobile: any; }) {
+  let isMobileInitCheck: boolean = window.innerWidth <= 1200;
+
   let elements = [
     <TextCard margin="5px">
       <p className="contact-header">Contact Us</p>
@@ -37,17 +39,20 @@ export default function Contact(props: { isMobile: any; }) {
   ];
 
   let layout;
-  if (props.isMobile) {
+  if (props.isMobile || isMobileInitCheck) {
     layout = (
+      <div className='contactContainerMobile'>
       <Stack>
         {elements[0]}
         {elements[1]}
         {elements[2]}
         {elements[3]}
       </Stack>
+      </div>
     );
   } else {
     layout = (
+      <div className='contactContainer'>
       <Container>
         <Row className="row">
           <Col>{elements[0]}</Col>
@@ -60,6 +65,7 @@ export default function Contact(props: { isMobile: any; }) {
           <Col>{elements[3]}</Col>
         </Row>
       </Container>
+      </div>
     );
   }
 

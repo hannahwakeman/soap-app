@@ -9,7 +9,8 @@ import Stack from 'react-bootstrap/Stack';
 import TextCard from '../shared/TextCard';
 
 export default function Home(props: { isMobile: any; }) {
-  const isMobile = props.isMobile;
+
+  let isMobileInitCheck: boolean = window.innerWidth <= 1200;
 
   const imageListTop: ImageCarouselInput[] = [
     {
@@ -60,11 +61,11 @@ export default function Home(props: { isMobile: any; }) {
     </TextCard>,
     <ImageCarousel
       images={imageListBottom}
-      width={!props.isMobile ? '800px' : ''}
+      width={!props.isMobile && !isMobileInitCheck ? '800px' : ''}
     />,
   ];
 
-  if (!isMobile) {
+  if (!props.isMobile && !isMobileInitCheck) {
     layout = (
       <div>
         {elements[0]}

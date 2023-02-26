@@ -1,7 +1,12 @@
 @use '../../styles/variables/colors' as *;
 
-.contact-container {
-  max-width: 600px;
+.contactContainerMobile {
+  max-width: 900px;
+  padding:10px;
+}
+
+.contactContainerMobile {
+  margin: 10px;
 }
 
 .contact-header {
@@ -10,7 +15,8 @@
 }
 
 .margin-5 {
-  margin: 5px;
+  margin-top: 5px !important;
+  margin-bottom: 5px !important;
 }
 
 .contact-info {

@@ -5,7 +5,7 @@ export default function About(props: { isMobile: any; }) {
   let isMobile = props.isMobile;
   if (isMobile){}
   return (
-    <div className="about-container">
+    <div className="aboutContainer">
       <TextCard margin="5px">
         <p>
           <b>Our Soaps</b>

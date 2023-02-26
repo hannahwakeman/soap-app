@@ -15,7 +15,7 @@ export default function NavBar() {
             <Nav.Link href="/contact">Contact</Nav.Link>
           </Nav>
         </Navbar.Collapse>
-        <Navbar.Brand href="#home">Summer Baby Studios</Navbar.Brand>
+        <Navbar.Brand href="/">Summer Baby Studios</Navbar.Brand>
       </Container>
     </Navbar>
   );

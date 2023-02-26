@@ -16,11 +16,12 @@ export default function MainPage() {
     function handleResize() {
       setIsMobile(window.innerWidth <= 1200);
     }
+
     window.addEventListener('resize', handleResize);
     return () => {
       window.removeEventListener('resize', handleResize);
     };
-  }, []);
+  });
 
   const router = createBrowserRouter([
     { path: '/', element: <Home isMobile={isMobile} /> },
