@@ -57,7 +57,7 @@ export default function Contact(props: { isMobile: any; }) {
         <Row className="row">
           <Col>{elements[0]}</Col>
           <Col>
-            <div className="contact-info">{elements[1]}</div>
+            <div className="contactInfoWide">{elements[1]}</div>
           </Col>
         </Row>
         <Row className="row">

@@ -3,9 +3,10 @@
 .contactContainerMobile {
   max-width: 900px;
   padding:10px;
+  margin:auto;
 }
 
-.contactContainerMobile {
+.contactContainer {
   margin: 10px;
 }
 
@@ -15,11 +16,11 @@
 }
 
 .margin-5 {
-  margin-top: 5px !important;
-  margin-bottom: 5px !important;
+  padding: 5px;
+
 }
 
-.contact-info {
+.contactInfoWide {
   width: 800px;
 }
 
