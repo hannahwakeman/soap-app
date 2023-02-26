@@ -82,6 +82,7 @@ export default function Home(props: { isMobile: any; }) {
     );
   } else {
     layout = (
+      <div className="homeMobileLayout">
       <Stack gap={3} className="stack">
         {elements[0]}
         {elements[1]}
@@ -89,6 +90,7 @@ export default function Home(props: { isMobile: any; }) {
         {elements[3]}
         {elements[4]}
       </Stack>
+      </div>
     );
   }
 
