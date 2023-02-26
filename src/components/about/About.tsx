@@ -3,6 +3,7 @@ import TextCard from '../shared/TextCard';
 import './About.scss';
 export default function About(props: { isMobile: any; }) {
   let isMobile = props.isMobile;
+  if (isMobile){}
   return (
     <div className="about-container">
       <TextCard margin="5px">
@@ -23,6 +24,7 @@ export default function About(props: { isMobile: any; }) {
         <img
           className="d-block w-100 round"
           src="https://inventora.com/wp-content/uploads/2022/12/how-to-be-a-successful-soap-maker.jpg"
+          alt=''
         />
         <p>&nbsp;</p>
       </TextCard>
