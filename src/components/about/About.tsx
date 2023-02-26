@@ -6,12 +6,12 @@ export default function About(props: { isMobile: any; }) {
   if (isMobile){}
   return (
     <div className="aboutContainer">
-      <TextCard margin="5px">
+      <TextCard margin="10px">
         <p>
           <b>Our Soaps</b>
         </p>
       </TextCard>
-      <TextCard margin="5px">
+      <TextCard margin="10px">
         <p>We make a lot of soaps. Here are some of the soaps we make:</p>
         <p>&nbsp;</p>
         <p>Lavender</p>
