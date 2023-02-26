@@ -1,0 +1,14 @@
+@use '../../styles/variables/colors' as *;
+.text-container {
+  height: 100%;
+  background-color: $white-color;
+  display: flex;
+  justify-content: center;
+  border-radius: 20px;
+  padding: 20px;
+  p {
+    margin: auto;
+    text-align: center;
+    width: 70%;
+  }
+}

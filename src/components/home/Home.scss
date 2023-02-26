@@ -1,0 +1,22 @@
+@use '../../styles/variables/colors' as *;
+.row {
+  padding-bottom: 20px;
+}
+
+.stack {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.title {
+  margin: auto;
+  width: 100%;
+  background-color: $base-color;
+  padding: 20px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.imageListBottom {
+  width: 100%;
+}
