@@ -1,45 +1,44 @@
-import * as React from 'react';
-import ImageCarousel from '../shared/ImageCarousel';
-import Container from 'react-bootstrap/Container';
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
-import './Home.scss';
-import { ImageCarouselInput } from '../../Interfaces';
-import Stack from 'react-bootstrap/Stack';
-import TextCard from '../shared/TextCard';
+import * as React from "react";
+import ImageCarousel from "../shared/ImageCarousel";
+import Container from "react-bootstrap/Container";
+import Row from "react-bootstrap/Row";
+import Col from "react-bootstrap/Col";
+import "./Home.scss";
+import { ImageCarouselInput } from "../../Interfaces";
+import Stack from "react-bootstrap/Stack";
+import TextCard from "../shared/TextCard";
 
-export default function Home(props: { isMobile: any; }) {
-
+export default function Home(props: { isMobile: any }) {
   let isMobileInitCheck: boolean = window.innerWidth <= 1200;
 
   const imageListTop: ImageCarouselInput[] = [
     {
-      imageSrc: 'https://i.ibb.co/gz24zLd/image2.jpg',
-      label: 'Bee Soap',
+      imageSrc: "https://i.ibb.co/gz24zLd/image2.jpg",
+      label: "Bee Soap",
     },
     {
-      imageSrc: 'https://i.ibb.co/P5dWZVY/image3.jpg',
-      label: 'More Soap',
+      imageSrc: "https://i.ibb.co/P5dWZVY/image3.jpg",
+      label: "More Soap",
     },
     {
-      imageSrc: 'https://i.ibb.co/gRkBtBs/image1.png',
-      label: 'Goat Soap',
-      subLabel: 'Soap from a bunch o goats',
+      imageSrc: "https://i.ibb.co/gRkBtBs/image1.png",
+      label: "Goat Soap",
+      subLabel: "Soap from a bunch o goats",
     },
   ];
 
   const imageListBottom: ImageCarouselInput[] = [
     {
       imageSrc:
-        'https://i.ibb.co/z5HdBry/Screen-Shot-2023-02-25-at-2-55-18-PM.png',
+        "https://i.ibb.co/z5HdBry/Screen-Shot-2023-02-25-at-2-55-18-PM.png",
     },
     {
       imageSrc:
-        'https://i.ibb.co/sWj06KN/Screen-Shot-2023-02-25-at-2-55-38-PM.png',
+        "https://i.ibb.co/sWj06KN/Screen-Shot-2023-02-25-at-2-55-38-PM.png",
     },
     {
       imageSrc:
-        'https://i.ibb.co/r5985HY/Screen-Shot-2023-02-25-at-2-56-15-PM.png',
+        "https://i.ibb.co/r5985HY/Screen-Shot-2023-02-25-at-2-56-15-PM.png",
     },
   ];
 
@@ -61,7 +60,7 @@ export default function Home(props: { isMobile: any; }) {
     </TextCard>,
     <ImageCarousel
       images={imageListBottom}
-      width={!props.isMobile && !isMobileInitCheck ? '800px' : ''}
+      width={!props.isMobile && !isMobileInitCheck ? "800px" : ""}
     />,
   ];
 
@@ -84,13 +83,13 @@ export default function Home(props: { isMobile: any; }) {
   } else {
     layout = (
       <div className="homeMobileLayout">
-      <Stack gap={3} className="stack">
-        {elements[0]}
-        {elements[1]}
-        {elements[2]}
-        {elements[3]}
-        {elements[4]}
-      </Stack>
+        <Stack gap={3} className="stack">
+          {elements[0]}
+          {elements[1]}
+          {elements[2]}
+          {elements[3]}
+          {elements[4]}
+        </Stack>
       </div>
     );
   }

@@ -1,13 +1,9 @@
-@use '../../styles/variables/colors' as *;
+@use "../../styles/variables/colors" as *;
 
 .contactContainerMobile {
-  max-width: 900px;
-  padding:10px;
-  margin:auto;
-}
-
-.contactContainer {
-  margin: 10px;
+  max-width: 1000px;
+  padding: 10px;
+  margin: auto;
 }
 
 .contact-header {
@@ -17,7 +13,6 @@
 
 .margin-5 {
   padding: 5px;
-
 }
 
 .contactInfoWide {
@@ -25,7 +20,7 @@
 }
 
 .accent {
-  .text-container{
+  .text-container {
     background-color: $accent-color;
   }
 }

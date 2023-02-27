@@ -1,0 +1,44 @@
+@use "../../styles/variables/colors" as *;
+.shop-grid-item-container {
+  padding: 15px;
+  width: 100%;
+  position: relative;
+}
+
+.shop-grid-image {
+  max-width: 100%;
+}
+
+.shop-item-label {
+  position: absolute;
+  background-color: white;
+  opacity: 0.7;
+  width: 180px;
+  margin-top: -40px;
+  height: 22px;
+}
+
+.shop-item-price {
+  position: absolute;
+  opacity: 0.7;
+  height: 50px;
+  background: white;
+  padding: 15px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-radius: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  right: 0;
+  z-index: 1;
+  p {
+    margin-top: 12px;
+  }
+}
+
+.shop-item-price.sale {
+  background-color: rgb(245, 119, 100);
+  color: white;
+}

@@ -1,14 +1,24 @@
-
-@import './variables/colors.scss';
+@import "./variables/colors.scss";
 
 h1,
 p {
-  font-family: 'Gelasio', serif !important;
+  font-family: "Gelasio", serif !important;
 }
 
 .font-gelasio {
-  font-family: 'Gelasio', serif !important;
+  font-family: "Gelasio", serif !important;
 }
 
-body {
+.main-header {
+  font-weight: bold;
+  font-size: 25px;
+  width: 100%;
+}
+
+.page-container {
+  margin: 10px;
+}
+
+.round {
+  border-radius: 20px;
 }

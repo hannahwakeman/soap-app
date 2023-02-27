@@ -1,9 +1,13 @@
-import Carousel from 'react-bootstrap/Carousel';
-import * as React from 'react';
-import './ImageCarousel.scss';
-import { ImageCarouselInput } from '../../Interfaces';
+import Carousel from "react-bootstrap/Carousel";
+import * as React from "react";
+import "./ImageCarousel.scss";
+import { ImageCarouselInput } from "../../Interfaces";
 
-export default function ImageCarousel(props: { images: ImageCarouselInput[]; width?: any; }) {
+export default function ImageCarousel(props: {
+  images: ImageCarouselInput[];
+  width?: string;
+  height?: string;
+}) {
   const images: ImageCarouselInput[] = props.images;
 
   const carouselItems = images.map((image) => (
@@ -11,7 +15,7 @@ export default function ImageCarousel(props: { images: ImageCarouselInput[]; wid
       <img
         className="d-block w-100 round"
         src={image.imageSrc}
-        alt={image.label || ''}
+        alt={image.label || ""}
       />
       <Carousel.Caption>
         <h5>{image.label || null}</h5>
@@ -20,10 +24,16 @@ export default function ImageCarousel(props: { images: ImageCarouselInput[]; wid
     </Carousel.Item>
   ));
 
-  const width = props.width ? props.width : 'auto';
+  const width = props.width ? props.width : "auto";
+  const height = props.height ? props.height : "auto";
+
+  let style = {
+    width: width,
+    height: height,
+  };
 
   return (
-    <Carousel className="carousel font-gelasio" style={{ width: `${width}` }}>
+    <Carousel className="carousel font-gelasio" style={style}>
       {carouselItems}
     </Carousel>
   );

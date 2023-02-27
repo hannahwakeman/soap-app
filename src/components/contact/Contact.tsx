@@ -1,9 +1,9 @@
-import * as React from 'react';
-import { Col, Container, Row, Stack } from 'react-bootstrap';
-import TextCard from '../shared/TextCard';
-import './Contact.scss';
+import * as React from "react";
+import { Col, Container, Row, Stack } from "react-bootstrap";
+import TextCard from "../shared/TextCard";
+import "./Contact.scss";
 
-export default function Contact(props: { isMobile: any; }) {
+export default function Contact(props: { isMobile: any }) {
   let isMobileInitCheck: boolean = window.innerWidth <= 1200;
 
   let elements = [
@@ -11,11 +11,11 @@ export default function Contact(props: { isMobile: any; }) {
       <p className="contact-header">Contact Us</p>
     </TextCard>,
     <div className="accent">
-    <TextCard margin="5px">
+      <TextCard margin="5px">
         <p>(315) 100-0001</p>
         <p>contact@summerbabystudios.com</p>
         <p>123 Soapin St, Soapville, Ny 10000</p>
-    </TextCard>
+      </TextCard>
     </div>,
     <img
       className="d-block w-100 round margin-5"
@@ -41,30 +41,30 @@ export default function Contact(props: { isMobile: any; }) {
   let layout;
   if (props.isMobile || isMobileInitCheck) {
     layout = (
-      <div className='contactContainerMobile'>
-      <Stack>
-        {elements[0]}
-        {elements[1]}
-        {elements[2]}
-        {elements[3]}
-      </Stack>
+      <div className="page-container contactContainerMobile">
+        <Stack>
+          {elements[0]}
+          {elements[1]}
+          {elements[2]}
+          {elements[3]}
+        </Stack>
       </div>
     );
   } else {
     layout = (
-      <div className='contactContainer'>
-      <Container>
-        <Row className="row">
-          <Col>{elements[0]}</Col>
-          <Col>
-            <div className="contactInfoWide">{elements[1]}</div>
-          </Col>
-        </Row>
-        <Row className="row">
-          <Col>{elements[2]}</Col>
-          <Col>{elements[3]}</Col>
-        </Row>
-      </Container>
+      <div className="page-container">
+        <Container>
+          <Row className="row">
+            <Col>{elements[0]}</Col>
+            <Col>
+              <div className="contactInfoWide">{elements[1]}</div>
+            </Col>
+          </Row>
+          <Row className="row">
+            <Col>{elements[2]}</Col>
+            <Col>{elements[3]}</Col>
+          </Row>
+        </Container>
       </div>
     );
   }
