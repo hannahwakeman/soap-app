@@ -1,4 +1,5 @@
 @use "../../styles/variables/colors" as *;
+
 .shop-grid-item-container {
   padding: 15px;
   width: 100%;
@@ -13,8 +14,8 @@
 }
 
 .shop-grid-image {
-  height: 270px;
-  width: 220px;
+  height: 100%;
+  width: 100%;
   object-fit: cover;
 }
 

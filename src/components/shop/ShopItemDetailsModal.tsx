@@ -13,7 +13,7 @@ export default function ShopItemDetailsModal(props: {
   return (
     <Modal
       {...props}
-      size="xl"
+      size="lg"
       aria-labelledby="contained-modal-title-vcenter"
       centered
       className="font-gelasio shop-item-details-modal"

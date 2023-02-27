@@ -95,7 +95,7 @@ export const shopItems: ShopItem[] = [
   },
   {
     images: [
-      "https://i.etsystatic.com/6031827/r/il/52c980/4043806069/il_680x540.4043806069_7o7k.jpg",
+      "https://i.etsystatic.com/23683511/r/il/9d1dbc/3178529578/il_1588xN.3178529578_hmok.jpg",
       "https://i.etsystatic.com/22004475/r/il/f90b5d/2164735050/il_1588xN.2164735050_4loo.jpg",
       "https://i.etsystatic.com/23683511/r/il/274722/4379864512/il_1588xN.4379864512_slvb.jpg",
     ],

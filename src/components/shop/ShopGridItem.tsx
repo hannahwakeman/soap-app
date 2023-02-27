@@ -1,10 +1,9 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { ShopItem } from "../../Interfaces";
 import "./ShopGridItem.scss";
 import ShopItemDetailsModal from "./ShopItemDetailsModal";
 
 export default function ShopGridItem(props: { item: ShopItem }) {
-  // let isMobileInitCheck: boolean = window.innerWidth <= 576;
   const [modalShow, setModalShow] = useState(false);
 
   return (
