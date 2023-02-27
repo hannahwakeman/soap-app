@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { ShopItem } from "../../Interfaces";
 import "./ShopGridItem.scss";
 import ShopItemDetailsModal from "./ShopItemDetailsModal";
