@@ -1,21 +1,21 @@
+import { useState } from "react";
 import { ShopItem } from "../../Interfaces";
 import "./ShopGridItem.scss";
+import ShopItemDetailsModal from "./ShopItemDetailsModal";
 
 export default function ShopGridItem(props: { item: ShopItem }) {
-  // let isMobileInitCheck: boolean = window.innerWidth <= 1200;
+  // let isMobileInitCheck: boolean = window.innerWidth <= 576;
+  const [modalShow, setModalShow] = useState(false);
 
-  /*   images: string[];
-  itemName: string;
-  price: number;
-  itemDescription: string;
-  options?: ShopItemVariety[]; */
-
-  let elements = [
+  return (
     <div className="shop-grid-item-container">
       <img
         className="shop-grid-image round"
         src={props.item.images[0]}
         alt={""}
+        onClick={() => {
+          setModalShow(true);
+        }}
       />
       <div className="shop-item-label">
         <p>{props.item.itemName}</p>
@@ -25,18 +25,14 @@ export default function ShopGridItem(props: { item: ShopItem }) {
       >
         <p>{props.item.price}</p>
       </div>
-    </div>,
-  ];
 
-  /*   let layout = (
-    <div className="shopGridContainer">
-      <Container>
-        <Row>
-          <Col>{elements[0]}</Col>
-        </Row>
-      </Container>
+      <ShopItemDetailsModal
+        item={props.item}
+        show={modalShow}
+        onHide={() => {
+          setModalShow(false);
+        }}
+      />
     </div>
-  ); */
-
-  return elements[0];
+  );
 }

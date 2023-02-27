@@ -8,7 +8,7 @@ export default function ShopGrid(props: { items: ShopItem[] }) {
 
   //for each shopitem, create a ShopGridItem, then add to elements
   const gridItems = props.items.map((item, index) => (
-    <Col className="column" sm={6} lg={3}>
+    <Col className="column" sm={6} lg={3} key={index}>
       <ShopGridItem key={index} item={item}></ShopGridItem>
     </Col>
   ));
