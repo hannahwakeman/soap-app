@@ -123,7 +123,12 @@ export default function ShopItemDetailsModal(props: {
           />
 
           <div className="center-wrapper">
-            <h4 className="price main-font"> {props.item.price}</h4>
+            <h4 className="price main-font">
+              {props.item.price.toLocaleString("en-US", {
+                style: "currency",
+                currency: "USD",
+              })}
+            </h4>
           </div>
           <div className="center-wrapper">
             <Accordion className="description-accordian main-font">

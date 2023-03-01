@@ -38,7 +38,12 @@ export default function ShopGridItem(props: { item: ShopItem }) {
       <div
         className={props.item.sale ? "shop-item-price sale" : "shop-item-price"}
       >
-        <p>{props.item.price}</p>
+        <p>
+          {props.item.price.toLocaleString("en-US", {
+            style: "currency",
+            currency: "USD",
+          })}
+        </p>
       </div>
 
       <ShopItemDetailsModal
