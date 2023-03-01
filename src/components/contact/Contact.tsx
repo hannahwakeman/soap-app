@@ -44,9 +44,11 @@ export default function Contact(props: { isMobile: any }) {
       <div className="page-container contactContainerMobile">
         <Stack>
           {elements[0]}
-          {elements[1]}
-          {elements[2]}
-          {elements[3]}
+          <div className="transition">
+            {elements[1]}
+            {elements[2]}
+            {elements[3]}
+          </div>
         </Stack>
       </div>
     );
@@ -57,10 +59,10 @@ export default function Contact(props: { isMobile: any }) {
           <Row className="row">
             <Col>{elements[0]}</Col>
             <Col>
-              <div className="contactInfoWide">{elements[1]}</div>
+              <div className="contactInfoWide transition">{elements[1]}</div>
             </Col>
           </Row>
-          <Row className="row">
+          <Row className="row transition">
             <Col>{elements[2]}</Col>
             <Col>{elements[3]}</Col>
           </Row>

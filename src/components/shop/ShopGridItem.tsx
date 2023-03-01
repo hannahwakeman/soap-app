@@ -21,8 +21,8 @@ export default function ShopGridItem(props: { item: ShopItem }) {
   }, []);
 
   let containerClass: string = isSingleWide
-    ? "single-wide shop-grid-item-container"
-    : "normal-wide shop-grid-item-container";
+    ? "single-wide shop-grid-item-container transition"
+    : "normal-wide shop-grid-item-container transition";
 
   return (
     <div className={containerClass}>

@@ -16,7 +16,7 @@ export default function About(props: { isMobile: any }) {
         <TextCard margin="5px">
           <p className="main-header">Our Soaps</p>
         </TextCard>
-        <TextCard margin="10px">
+        <TextCard margin="10px" className="transition">
           <p>We make a lot of soaps. Here are some of the soaps we make:</p>
           <p>&nbsp;</p>
           <p>Lavender</p>

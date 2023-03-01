@@ -3,6 +3,7 @@ import { Stack } from "react-bootstrap";
 import "./TextCard.scss";
 export default function TextCard(props: {
   margin?: string;
+  className?: string;
   children:
     | string
     | number
@@ -15,7 +16,7 @@ export default function TextCard(props: {
 }) {
   return (
     <div
-      className="text-container round"
+      className={"text-container round " + (props.className || "")}
       style={{ margin: `${props.margin || 0}` }}
     >
       <Stack>{props.children}</Stack>

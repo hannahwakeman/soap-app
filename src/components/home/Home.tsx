@@ -69,7 +69,7 @@ export default function Home(props: { isMobile: any }) {
       <div>
         {elements[0]}
         <Container>
-          <Row className="row">
+          <Row className="row transition">
             <Col>{elements[1]}</Col>
             <Col>{elements[2]}</Col>
           </Row>
@@ -85,10 +85,12 @@ export default function Home(props: { isMobile: any }) {
       <div className="homeMobileLayout">
         <Stack gap={3} className="stack">
           {elements[0]}
-          {elements[1]}
-          {elements[2]}
-          {elements[3]}
-          {elements[4]}
+          <div className="transition">
+            {elements[1]}
+            {elements[2]}
+            {elements[3]}
+            {elements[4]}
+          </div>
         </Stack>
       </div>
     );

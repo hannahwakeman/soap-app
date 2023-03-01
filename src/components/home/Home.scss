@@ -1,4 +1,4 @@
-@use '../../styles/variables/colors' as *;
+@use "../../styles/variables/colors" as *;
 .row {
   padding-bottom: 20px;
 }
@@ -6,6 +6,21 @@
 .stack {
   padding-left: 10px;
   padding-right: 10px;
+}
+.transition {
+  animation: fadeIn 0.5s ease-in-out;
+  animation-delay: calc(0.1s * var(--i));
+
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+      transform: translateY(100px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
 }
 
 .title {
@@ -21,7 +36,7 @@
   width: 100%;
 }
 
-.homeMobileLayout{
+.homeMobileLayout {
   max-width: 800px;
-  margin:auto;
+  margin: auto;
 }

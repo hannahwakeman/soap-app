@@ -33,6 +33,7 @@ p {
 .fade-in.visible {
   opacity: 1;
 }
+
 .flex-row {
   display: flex;
   flex-direction: row;
@@ -48,4 +49,19 @@ p {
 }
 .flex-column.stretch {
   align-items: stretch !important;
+}
+.transition {
+  animation: fadeIn 0.5s ease-in-out;
+  animation-delay: calc(0.1s * var(--i));
+
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+      transform: translateY(100px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
 }
