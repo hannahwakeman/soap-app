@@ -51,14 +51,15 @@ export default function Home(props: { isMobile: any }) {
 
   let elements = [
     <h1 className="title">Summer Baby Studios</h1>,
-    <ImageCarousel images={imageListTop} />,
-    <TextCard>
+    <ImageCarousel className="transition" images={imageListTop} />,
+    <TextCard className="transition">
       <p>{text1}</p>
     </TextCard>,
-    <TextCard>
+    <TextCard className="transition">
       <p>{text2}</p>
     </TextCard>,
     <ImageCarousel
+      className="transition"
       images={imageListBottom}
       width={!props.isMobile && !isMobileInitCheck ? "800px" : ""}
     />,
@@ -85,12 +86,10 @@ export default function Home(props: { isMobile: any }) {
       <div className="homeMobileLayout">
         <Stack gap={3} className="stack">
           {elements[0]}
-          <div className="transition">
-            {elements[1]}
-            {elements[2]}
-            {elements[3]}
-            {elements[4]}
-          </div>
+          {elements[1]}
+          {elements[2]}
+          {elements[3]}
+          {elements[4]}
         </Stack>
       </div>
     );

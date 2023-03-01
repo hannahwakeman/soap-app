@@ -8,6 +8,7 @@ export default function ImageCarousel(props: {
   width?: string;
   height?: string;
   object_fit?: string;
+  className?: string;
 }) {
   const images: ImageCarouselInput[] = props.images;
 
@@ -42,5 +43,9 @@ export default function ImageCarousel(props: {
     height: height,
   }; */
 
-  return <Carousel className="carousel font-gelasio">{carouselItems}</Carousel>;
+  return (
+    <Carousel className={"carousel main-font " + props.className}>
+      {carouselItems}
+    </Carousel>
+  );
 }
