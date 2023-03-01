@@ -1,7 +1,6 @@
-@use '../../styles/variables/colors' as *;
+@use "../../styles/variables/colors" as *;
 
 .header {
-  font-family: 'Gelasio', serif !important;
   background-color: $base-color;
   margin: auto;
   width: 100%;

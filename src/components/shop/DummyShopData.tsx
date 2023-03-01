@@ -10,7 +10,7 @@ export const shopItems: ShopItem[] = [
     itemName: "Goat Cheese Soap",
     price: 10.99,
     itemDescription:
-      "Made of organic goat cheese and bees harvested from the Adirondack Mountains.",
+      "The answer was within her reach. It was hidden in a box and now that box sat directly in front of her. She'd spent years searching for it and could hardly believe she'd finally managed to find it. She turned the key to unlock the box and then gently lifted the top. She held her breath in anticipation of finally knowing the answer she had spent so much of her time in search of. As the lid came off she could see that the box was empty.",
     inventory: 100,
     options: [{ name: "Size", options: ["4oz", "8oz", "1lb"] }],
   },
@@ -89,7 +89,7 @@ export const shopItems: ShopItem[] = [
     itemName: "Gluten Free Soap",
     price: 10.99,
     itemDescription:
-      "Made of organic goat cheese and bees harvested from the Adirondack Mountains.",
+      "The answer was within her reach. It was hidden in a box and now that box sat directly in front of her. She'd spent years searching for it and could hardly believe she'd finally managed to find it. She turned the key to unlock the box and then gently lifted the top. She held her breath in anticipation of finally knowing the answer she had spent so much of her time in search of. As the lid came off she could see that the box was empty.",
     inventory: 100,
     options: [{ name: "Size", options: ["4oz", "8oz", "1lb"] }],
   },

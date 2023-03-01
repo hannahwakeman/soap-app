@@ -5,7 +5,7 @@ import Navbar from "react-bootstrap/Navbar";
 
 export default function NavBar() {
   return (
-    <Navbar bg="light" expand="lg" className="font-gelasio " fixed="top">
+    <Navbar bg="light" expand="lg" className="main-font " fixed="top">
       <Container>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav" role="navigation">

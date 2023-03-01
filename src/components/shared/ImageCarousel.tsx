@@ -20,10 +20,10 @@ export default function ImageCarousel(props: {
     style["height"] = props.height;
   }
   if (props.object_fit) {
-    style["object-fit"] = props.object_fit;
+    style["objectFit"] = props.object_fit;
   }
-  const carouselItems = images.map((image) => (
-    <Carousel.Item>
+  const carouselItems = images.map((image, index) => (
+    <Carousel.Item key={index}>
       <img
         style={style}
         className="d-block w-100 round"

@@ -1,14 +1,47 @@
-.price {
-  text-align: right;
+.modal {
+  overflow-y: scroll;
 }
-.add-to-cart-button {
-  background-color: rgb(124, 161, 149);
-  color: white;
-  border-radius: 30px;
-  border: 0;
-  padding: 15px;
+.price {
+  margin: 5px;
+  text-align: center;
+  padding: 5px;
+  border: solid;
+  border-color: rgb(65, 64, 64);
+  border-radius: 4px;
+  width: 80%;
 }
 
-.bottom-section {
-  float: right;
+.center-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.bottom-buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.description-accordian {
+  //border only on bottom none on other sides
+  border-top: solid;
+  border-left: none;
+  border-right: none;
+  border-bottom: solid;
+  border-color: rgb(65, 64, 64);
+  box-shadow: none !important;
+  border-radius: 0px;
+  line-height: normal;
+  width: 80%;
+}
+
+.item-description {
+  padding: 0 30px 30px 30px;
+}
+.item-description.small-padding {
+  padding: 0 10px 10px 10px;
+}
+
+.quantity-select {
+  align-self: center;
 }
