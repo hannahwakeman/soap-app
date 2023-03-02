@@ -1,0 +1,11 @@
+@mixin glow {
+  animation: glow 1s ease-in-out infinite alternate;
+  @keyframes glow {
+    from {
+      box-shadow: 0 0 10px 1px white;
+    }
+    to {
+      box-shadow: 0 0 50px 1px white;
+    }
+  }
+}

@@ -25,15 +25,6 @@ p {
   border-radius: 20px;
 }
 
-.fade-in {
-  opacity: 0;
-  transition: opacity 0.5s ease-in-out;
-}
-
-.fade-in.visible {
-  opacity: 1;
-}
-
 .flex-row {
   display: flex;
   flex-direction: row;
@@ -50,6 +41,8 @@ p {
 .flex-column.stretch {
   align-items: stretch !important;
 }
+
+/* slide in from bottom */
 .transition {
   animation: fadeIn 0.5s ease-in-out;
   animation-delay: calc(0.1s * var(--i));
@@ -64,4 +57,13 @@ p {
       transform: translateY(0);
     }
   }
+}
+
+.fade-in {
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.fade-in.visible {
+  opacity: 1;
 }

@@ -4,9 +4,6 @@ import "./ShopGrid.scss";
 import ShopGridItem from "./ShopGridItem";
 
 export default function ShopGrid(props: { items: ShopItem[] }) {
-  // let isMobileInitCheck: boolean = window.innerWidth <= 1200;
-
-  //for each shopitem, create a ShopGridItem, then add to elements
   const gridItems = props.items.map((item, index) => (
     <Col className="column" sm={6} lg={3} key={index}>
       <ShopGridItem key={index} item={item}></ShopGridItem>

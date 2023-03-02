@@ -4,8 +4,23 @@
   margin: auto;
 }
 
-.shopContainer {
+.shop-container {
   margin: auto;
   padding-top: 10px;
   max-width: 1200px;
+
+  .header-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    p {
+      padding-left: 57px;
+      font-size: 25px;
+      font-weight: bold;
+    }
+
+    .cart-icon {
+      margin-left: 10px;
+    }
+  }
 }

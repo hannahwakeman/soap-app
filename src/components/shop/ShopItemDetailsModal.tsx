@@ -31,11 +31,9 @@ export default function ShopItemDetailsModal(props: {
 
   function findSize(): string {
     let size: string = "";
-    if (window.innerWidth > 1200) {
-      size = "70%";
-    } else if (window.innerWidth <= 1200 && window.innerWidth > 700) {
-      size = "80%";
-    } else if (window.innerWidth <= 700) {
+    if (window.innerWidth > 800) {
+      size = "700px";
+    } else {
       size = "90%";
     }
     return size;
@@ -68,17 +66,6 @@ export default function ShopItemDetailsModal(props: {
     p: 4,
   };
 
-  /*   const detectIfOverflowYActivated = (): boolean => {
-    const element = document.querySelector(".MuiModal-root");
-    if (element) {
-      const style = window.getComputedStyle(element);
-      const overflowY = style.getPropertyValue("overflow-y");
-      return overflowY === "visible" ? true : false;
-    } else {
-      return false;
-    }
-  }; */
-  //create options 1-99
   const options = [];
   for (let i = 1; i <= 99; i++) {
     options.push(
@@ -117,7 +104,7 @@ export default function ShopItemDetailsModal(props: {
 
           <ImageCarousel
             images={carouselInput}
-            height={"350px"}
+            height={"370px"}
             width={"100%"}
             object_fit={"cover"}
           />

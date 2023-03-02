@@ -1,0 +1,14 @@
+@import "src/styles/mixins.scss";
+.cart-icon {
+  border-radius: 50%;
+  background-color: white;
+  border-color: rgb(53, 53, 53);
+  border: solid;
+  padding: 10px;
+
+  cursor: pointer;
+}
+
+.cart-icon:hover {
+  @include glow;
+}
